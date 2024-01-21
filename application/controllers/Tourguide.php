@@ -203,7 +203,7 @@
 			$nowmonth = date('m');
 			$nowday = date('d');
 
-			$datedata = "";
+			$datedata = array();
 
 			// end day 
 				if ($urlmonth == 4 || $urlmonth == 6 || $urlmonth == 9 || $urlmonth == 11) 
@@ -220,7 +220,7 @@
 
 				// condition for past date and one year for future
 
-				$datedata = "";
+				$datedata = array();
 
 			} elseif ($nowyear < $urlyear || (($nowmonth < $urlmonth) && ($nowyear == $urlyear))) {
 				
